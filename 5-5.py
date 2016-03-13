@@ -21,7 +21,12 @@ def divide(x):
 	print '%.2f美元换算结果:' % x
 	for i in range(len(chx)):
 		print '%d个%d美分'%( chx.values()[i],chx.keys()[i]),
-
+	print
 if __name__ == '__main__':
-	ch = float(raw_input("Input the number of dollars|$|:"))
-	divide(ch)
+	while True:
+		try:
+			ch = float(raw_input("\nInput the number of dollars|$|:"))
+		except ValueError,e:
+			print 'Please input the correct number !'
+			continue
+		divide(ch)

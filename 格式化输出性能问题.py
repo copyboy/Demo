@@ -6,7 +6,7 @@ import time
 user = 'zlzg'
 start = time.clock()
 
-for i in range(100):
+for i in range(1000):
 	print 'it is a test input',user
 
 usetime = time.clock() - start
@@ -14,7 +14,7 @@ usetime = time.clock() - start
 
 started = time.clock()
 
-for i in range(100):
+for i in range(1000):
 	print 'it is a test input %s' % user
 
 usedtime = time.clock() - started
